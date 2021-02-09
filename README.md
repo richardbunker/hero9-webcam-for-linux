@@ -23,9 +23,10 @@ Image
 5. Find the GoPro's IP in the network
     - eg my Computer's IP was 172.24.106.52 and the GoPro's IP was 172.24.106.51
 
-6. To fire up the WebCam hit this URL -> `http://<YOUR_GOPRO_IP_HERE>/gp/gpWebCam/START?res=1080` in a browser.
+6. To fire up the webcam mode on the GoPro hit URL `http://<YOUR_GOPRO_IP_HERE>/gp/gpWebCam/START?res=1080` in a browser.
 7. GoPro will send JSON response `{"Status": 2, "Error": 0}`
 8. `sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2`
 9. Pipe your GoPro's UDP stream on port 8554 to ffmpeg and set the output as and new video device (/dev/video4) `ffmpeg -i udp://<<YOUR_GOPRO_IP_HERE>:8554 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video4`
     - /dev/video4 seems to work for me
 10. Open OBS and test it out
+11. To stop the webcam mode hit URL `http://<YOUR_GOPRO_IP_HERE>/gp/gpWebCam/STOP` in a browser.
