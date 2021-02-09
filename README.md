@@ -23,7 +23,7 @@ Dell XPS 15
 <img src=https://github.com/richardbunker/hero9-webcam-for-linux/blob/main/ifconfig.png></img>
 
 5. Find the GoPro's IP in the network
-    - eg my Computer's IP was 172.24.106.52 and the GoPro's IP was 172.24.106.51
+    - eg my Computer's IP was 172.24.106.53 and the GoPro's IP was 172.24.106.51
 
 6. To fire up the webcam mode on the GoPro hit URL `http://<YOUR_GOPRO_IP_HERE>/gp/gpWebCam/START?res=1080` in a browser.
 7. GoPro will send JSON response `{"Status": 2, "Error": 0}`
