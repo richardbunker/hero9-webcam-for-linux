@@ -15,9 +15,11 @@ Dell XPS 15
 2. Connect via usb to your computer.
 
 3. Open Network settings, and enable the new USB ethernet interface
+
 <img src=https://github.com/richardbunker/hero9-webcam-for-linux/blob/main/Network.png></img>
 
 4. Find the your computer's IP on the new network via `ifconfig`
+
 <img src=https://github.com/richardbunker/hero9-webcam-for-linux/blob/main/ifconfig.png></img>
 
 5. Find the GoPro's IP in the network
